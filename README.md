@@ -1,2 +1,5 @@
 # CreativeCoding
-I'm playing with Creative Coding.
+
+I'm playing with Creative Coding (With Javascript)
+
+Following the exercises from [Creative Coding: Making Visuals with Javascript](https://www.domestika.org/en/courses/2729-creative-coding-making-visuals-with-javascript) from [Domestika](https://www.domestika.org/)
