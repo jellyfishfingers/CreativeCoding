@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Canvas Play</title>
+    </head>
+    <body>
+        <div>
+            <canvas id="canvas1" width="600" height="600"></canvas>
+        </div>
+
+        <div>
+            <canvas id="canvas2" width="300" height="300"></canvas>
+        </div>
+
+    <script>
+        //Canvas 1
+        let canvas1 = document.getElementById('canvas1');
+        let context1 = canvas1.getContext('2d');
+
+        context1.lineWidth = 4;
+        context1.beginPath();
+        context1.rect(100,100,400,400);
+        context1.stroke();
+
+        context1.beginPath();
+        context1.arc(300,300,20,0, Math.PI *2);
+        context1.stroke();
+
+        //Canvas 2 
+        let canvas2 = document.getElementById('canvas2');
+        let context2 = canvas1.getContext('2d');
+
+        context2.lineWidth = 4;
+        context2.beginPath();
+        context2.rect(100,100,400,400);
+        context2.stroke();
+
+        context1.beginPath();
+        context2.arc(300,300,20,0, Math.PI *2);
+        context2.stroke();
+
+    </script>
+    
+    </body>
+</html>
+

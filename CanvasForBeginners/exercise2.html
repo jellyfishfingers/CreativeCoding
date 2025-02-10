@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Canvas Play</title>
+    </head>
+    <body>
+        <canvas id="canvas1" width="600" height="600"></canvas>
+    <script>
+        let canvas = document.getElementById('canvas1');
+        let context = canvas.getContext('2d');
+        context.lineWidth=4;
+
+        //Outer Loop - Controls the Horizontal Placement
+        for (let i = 0; i < 1; i++)
+        { 
+            console.log("Printing i=" + i );
+            //Inner Loop - Controls the Vertical Placement (Rows) of the rectangles
+            for (let j = 0; j <5; j++){ 
+                let width= 60;
+                let height = 60;
+                let gap = 20;
+                let x = 100 + (width + gap) * i;
+                let y = 100 + (height + gap) * j;
+
+                console.log("x: "+ x + ", y: " + y);
+
+                context.beginPath();
+                context.rect(x, y, width, height);
+                context.stroke();
+            }
+        }
+
+    </script>
+    
+    </body>
+</html>
+
